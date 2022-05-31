@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="stackPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SavedGames.SavedGamesController">
+    <children>
+        <AnchorPane fx:id="ScreenAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="500.0" style="-fx-background-color: #272727;">
+            <children>
+                <Text fill="WHITE" layoutX="120.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SAVED GAMES">
+                    <font>
+                        <Font name="Comic Sans MS" size="38.0" />
+                    </font>
+                </Text>
+                <ImageView fitHeight="93.0" fitWidth="203.0" layoutX="158.0" layoutY="24.0">
+                    <image>
+                        <Image url="@../ImagesAll/GameHeading.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="HomeButton" fitHeight="65.0" fitWidth="76.0" layoutX="399.0" layoutY="514.0" onMouseClicked="#goToHomeScreen">
+                    <image>
+                        <Image url="@../ImagesAll/HomeButton.png" />
+                    </image>
+                </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b318c7" height="53.0" layoutX="267.0" layoutY="330.0" stroke="BLACK" strokeType="INSIDE" width="111.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b318c7" height="53.0" layoutX="267.0" layoutY="253.0" stroke="BLACK" strokeType="INSIDE" width="111.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b318c7" height="53.0" layoutX="267.0" layoutY="411.0" stroke="BLACK" strokeType="INSIDE" width="111.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b318c7" height="53.0" layoutX="267.0" layoutY="493.0" stroke="BLACK" strokeType="INSIDE" width="111.0" />
+            <Text fx:id="load1" fill="#f5fffe" layoutX="246.0" layoutY="287.0" onMouseClicked="#open1" strokeType="OUTSIDE" strokeWidth="0.0" text="Load 1" textAlignment="CENTER" wrappingWidth="152.81298828125">
+               <font>
+                  <Font name="OCR A Extended" size="22.0" />
+               </font>
+            </Text>
+            <Text fx:id="load2" fill="#f5fffe" layoutX="246.0" layoutY="364.0" onMouseClicked="#open2" strokeType="OUTSIDE" strokeWidth="0.0" text="Load 2" textAlignment="CENTER" wrappingWidth="152.81298828125">
+               <font>
+                  <Font name="OCR A Extended" size="22.0" />
+               </font>
+            </Text>
+            <Text fx:id="load3" fill="#f5fffe" layoutX="246.0" layoutY="445.0" onMouseClicked="#open3" strokeType="OUTSIDE" strokeWidth="0.0" text="Load 3" textAlignment="CENTER" wrappingWidth="152.81298828125">
+               <font>
+                  <Font name="OCR A Extended" size="22.0" />
+               </font>
+            </Text>
+            <Text fx:id="load4" fill="#f5fffe" layoutX="250.0" layoutY="527.0" onMouseClicked="#open4" strokeType="OUTSIDE" strokeWidth="0.0" text="Load 4" textAlignment="CENTER" wrappingWidth="152.81298828125">
+               <font>
+                  <Font name="OCR A Extended" size="22.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="82.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SAVED GAME" wrappingWidth="152.81298828125">
+               <font>
+                  <Font name="Comic Sans MS" size="22.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="92.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SAVED GAME" wrappingWidth="152.81298828125">
+               <font>
+                  <Font name="Comic Sans MS" size="22.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="92.0" layoutY="447.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SAVED GAME" wrappingWidth="152.81298828125">
+               <font>
+                  <Font name="Comic Sans MS" size="22.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="92.0" layoutY="528.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SAVED GAME" wrappingWidth="152.81298828125">
+               <font>
+                  <Font name="Comic Sans MS" size="22.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="235.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Loads if it exists" wrappingWidth="203.0">
+               <font>
+                  <Font name="Comic Sans MS" size="22.0" />
+               </font>
+            </Text>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>
