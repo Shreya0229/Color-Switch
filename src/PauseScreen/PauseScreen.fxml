@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="stackPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PauseScreen.PauseScreenController">
+    <children>
+        <AnchorPane fx:id="anchorScreen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="500.0" style="-fx-background-color: #272727;">
+            <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b318c7" height="50.0" layoutX="178.0" layoutY="210.0" stroke="BLACK" strokeType="INSIDE" width="160.0" />
+                <Rectangle fx:id="restartButtonBox" arcHeight="5.0" arcWidth="5.0" fill="#b318c7" height="50.0" layoutX="178.0" layoutY="297.0" stroke="BLACK" strokeType="INSIDE" width="160.0" />
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b318c7" height="50.0" layoutX="178.0" layoutY="392.0" stroke="BLACK" strokeType="INSIDE" width="160.0" />
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b318c7" height="57.0" layoutX="178.0" layoutY="488.0" stroke="BLACK" strokeType="INSIDE" width="160.0" />
+                <Text fx:id="continueButton" fill="#f5fffe" layoutX="174.0" layoutY="242.0" onMouseClicked="#goToGamePlayContinue" strokeType="OUTSIDE" strokeWidth="0.0" text="CONTINUE" textAlignment="CENTER" wrappingWidth="152.81298828125">
+                    <font>
+                        <Font name="OCR A Extended" size="22.0" />
+                    </font>
+                </Text>
+                <Text fx:id="restartButton" fill="#f5fffe" layoutX="182.0" layoutY="329.0" onMouseClicked="#goToGamePlay" strokeType="OUTSIDE" strokeWidth="0.0" text="RESTART" textAlignment="CENTER" wrappingWidth="152.81298828125">
+                    <font>
+                        <Font name="OCR A Extended" size="22.0" />
+                    </font>
+                </Text>
+                <Text fill="#f5fffe" layoutX="192.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SAVE " textAlignment="CENTER" wrappingWidth="152.81298828125">
+                    <font>
+                        <Font name="OCR A Extended" size="22.0" />
+                    </font>
+                </Text>
+                <Text fx:id="showSavedButton" fill="#f5fffe" layoutX="182.0" layoutY="512.0" onMouseClicked="#goToSavedGames" strokeType="OUTSIDE" strokeWidth="0.0" text="SHOW SAVED GAMES" textAlignment="CENTER" wrappingWidth="152.81298828125">
+                    <font>
+                        <Font name="OCR A Extended" size="22.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="199.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Paused...">
+                    <font>
+                        <Font name="Comic Sans MS" size="30.0" />
+                    </font>
+                </Text>
+                <ImageView fx:id="backButton" fitHeight="76.0" fitWidth="79.0" layoutX="33.0" layoutY="30.0" onMouseClicked="#goToGamePlay">
+                    <image>
+                        <Image url="@../ImagesAll/Back.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="93.0" fitWidth="200.0" layoutX="168.0" layoutY="30.0">
+                    <image>
+                        <Image url="@../ImagesAll/GameHeading.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="homeScreen" fitHeight="65.0" fitWidth="76.0" layoutX="385.0" layoutY="513.0" onMouseClicked="#goToHomeScreen">
+                    <image>
+                        <Image url="@../ImagesAll/HomeButton.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>

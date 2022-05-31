@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="stackPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GameOverScreen.GameOverScreenController">
+    <children>
+        <AnchorPane fx:id="anchorScreen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="500.0" style="-fx-background-color: #272727;">
+            <children>
+                <Text fill="WHITE" layoutX="164.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Score">
+                    <font>
+                        <Font name="Comic Sans MS" size="30.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="121.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Best Score">
+                    <font>
+                        <Font name="Comic Sans MS" size="30.0" />
+                    </font>
+                </Text>
+                <ImageView fx:id="replayGameButton" fitHeight="136.0" fitWidth="147.0" layoutX="112.0" layoutY="365.0" onMouseClicked="#goToGamePlay">
+                    <image>
+                        <Image url="@../ImagesAll/replay.png" />
+                    </image>
+                </ImageView>
+                <Text fill="WHITE" layoutX="164.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Over!">
+                    <font>
+                        <Font name="Comic Sans MS" size="30.0" />
+                    </font>
+                </Text>
+                <ImageView fx:id="homeButton" fitHeight="65.0" fitWidth="76.0" layoutX="396.0" layoutY="517.0" onMouseClicked="#goToHomeScreen">
+                    <image>
+                        <Image url="@../ImagesAll/HomeButton.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="104.0" fitWidth="220.0" layoutX="134.0" layoutY="22.0">
+                    <image>
+                        <Image url="@../ImagesAll/GameHeading.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="useStarsButton" fitHeight="65.0" fitWidth="70.0" layoutX="319.0" layoutY="409.0" onMouseClicked="#reduceStars">
+                    <image>
+                        <Image url="@../ImagesAll/UseStars.jpeg" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="42.0" fitWidth="89.0" layoutX="310.0" layoutY="365.0">
+                    <image>
+                        <Image url="@../ImagesAll/StarsLeft.jpg" />
+                    </image>
+                </ImageView>
+            <TextArea fx:id="scoreTextArea" blendMode="OVERLAY" disable="true" editable="false" layoutX="289.0" layoutY="191.0" maxHeight="20.0" prefHeight="30.0" prefWidth="106.0" text="0" AnchorPane.bottomAnchor="337.0">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </TextArea>
+            <TextArea fx:id="BestscoreTextArea" blendMode="OVERLAY" disable="true" editable="false" layoutX="289.0" layoutY="262.0" maxHeight="50.0" prefHeight="50.0" prefWidth="106.0" text="0">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </TextArea>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>
